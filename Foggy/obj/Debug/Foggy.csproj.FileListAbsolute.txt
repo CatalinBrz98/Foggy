@@ -115,3 +115,5 @@ E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.pdb
 E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.Migrations.InitialCreate.resources
 E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.csproj.GenerateResource.cache
 E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.Migrations.AddAdminRole.resources
+E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.Migrations.AddInitialModels.resources
+E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.Migrations.PopulateGameCategoriesAndCountries.resources

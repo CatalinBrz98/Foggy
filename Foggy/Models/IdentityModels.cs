@@ -20,6 +20,12 @@ namespace Foggy.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        public DbSet<Country> Countries { get; set; }
+        public DbSet<Discount> Discounts { get; set; }
+        public DbSet<Game> Games { get; set; }
+        public DbSet<GameCategory> GameCategories { get; set; }
+        public DbSet<Review> Reviews { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
