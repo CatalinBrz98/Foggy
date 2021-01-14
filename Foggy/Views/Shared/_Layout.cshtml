@@ -35,6 +35,17 @@
                 @if (User.IsInRole("Admin"))
                 {
                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Discounts<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header">Discounts</li>
+                            <li>@Html.ActionLink("List", "Index", "Discounts")</li>
+                            <li>@Html.ActionLink("Create", "Create", "Discounts")</li>
+                        </ul>
+                    </li>
+                }
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Game Categories<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li class="dropdown-header">Game Categories</li>

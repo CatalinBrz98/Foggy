@@ -52,7 +52,7 @@ namespace Foggy.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public ActionResult Create(Game game)
+        public ActionResult Create([Bind(Include = "Id,Name,Description,Price,GameCategories")] Game game)
         {
             db.Games.Add(game);
             db.SaveChanges();
@@ -85,7 +85,7 @@ namespace Foggy.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public ActionResult Edit([Bind(Include = "Id,Name,Description,Price")] Game game)
+        public ActionResult Edit([Bind(Include = "Id,Name,Description,Price,GameCategories")] Game game)
         {
             if (ModelState.IsValid)
             {
