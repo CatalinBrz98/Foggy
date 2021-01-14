@@ -117,3 +117,4 @@ E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.csproj.GenerateResource.cach
 E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.Migrations.AddAdminRole.resources
 E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.Migrations.AddInitialModels.resources
 E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.Migrations.PopulateGameCategoriesAndCountries.resources
+E:\Info\Limbaje\ASP.NET\Foggy\Foggy\obj\Debug\Foggy.Migrations.RemoveGamePoster.resources

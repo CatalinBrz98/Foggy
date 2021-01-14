@@ -12,7 +12,6 @@ namespace Foggy.Models
         [Required]
         [StringLength(30)]
         public string Name { get; set; }
-        [Required]
         public virtual ICollection<Game> Games { get; set; }
     }
 }

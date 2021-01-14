@@ -22,6 +22,5 @@ namespace Foggy.Models
 
         [Required]
         public virtual ICollection<GameCategory> GameCategories { get; set; }
-        public string PosterPath { get; set; }
     }
 }
