@@ -40,7 +40,7 @@ namespace Foggy.Controllers
         [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
-            var gameCategories = db.GameCategories.ToList();
+            var gameCategories = db.GameCategories.ToList().AsEnumerable();
             var viewModel = new GameCreateViewModel
             {
                 GameCategories = gameCategories
@@ -54,20 +54,9 @@ namespace Foggy.Controllers
         [Authorize(Roles = "Admin")]
         public ActionResult Create(Game game)
         {
-            if (ModelState.IsValid)
-            {
-                db.Games.Add(game);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            
-            var gameCategories = db.GameCategories.ToList();
-            var viewModel = new GameCreateViewModel
-            {
-                GameCategories = gameCategories,
-                Game = game
-            };
-            return View(viewModel);
+            db.Games.Add(game);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         // GET: Games/Edit/5
@@ -83,7 +72,13 @@ namespace Foggy.Controllers
             {
                 return HttpNotFound();
             }
-            return View(game);
+            var gameCategories = db.GameCategories.ToList().AsEnumerable();
+            var viewModel = new GameCreateViewModel
+            {
+                GameCategories = gameCategories,
+                Game = game
+            };
+            return View(viewModel);
         }
 
         // POST: Games/Edit/5

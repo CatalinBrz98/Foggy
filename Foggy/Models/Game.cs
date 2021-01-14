@@ -20,7 +20,6 @@ namespace Foggy.Models
 
         public float Price { get; set; }
 
-        [Required]
         public virtual ICollection<GameCategory> GameCategories { get; set; }
     }
 }

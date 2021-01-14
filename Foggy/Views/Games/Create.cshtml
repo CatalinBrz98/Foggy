@@ -42,7 +42,7 @@
     <div class="form-group">
         @Html.LabelFor(model => model.Game.GameCategories, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.ListBoxFor(model => model.Game.GameCategories, new SelectList(Model.GameCategories, "Id", "Name", "Select Game Categories"), new { @class = "form-control" })
+            @Html.ListBoxFor(model => model.SelectedGameCategoryIds, new SelectList(Model.GameCategories, "Id", "Name"), new { @class = "form-control" })
             @Html.ValidationMessageFor(model => model.Game.GameCategories, "", new { @class = "text-danger" })
         </div>
     </div>
