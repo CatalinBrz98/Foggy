@@ -17,6 +17,6 @@ namespace Foggy.Models
         [StringLength(3, MinimumLength = 3)]
         public string Alpha3 { get; set; }
         public int UnCode { get; set; }
-        public virtual ICollection<Discount> Discounts { get; set; }
+        public ICollection<Discount> Discounts { get; set; }
     }
 }

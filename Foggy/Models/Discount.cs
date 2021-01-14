@@ -13,6 +13,6 @@ namespace Foggy.Models
         public float Percentage { get; set; }
         [Required]
         public Game Game { get; set; }
-        public virtual ICollection<Country> Countries { get; set; }
+        public ICollection<Country> Countries { get; set; }
     }
 }
